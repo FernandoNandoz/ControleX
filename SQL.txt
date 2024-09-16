@@ -1,0 +1,59 @@
+CODIGO SQL PARA CRIAÇÃO DAS TABELAS NO BANCCO DE DADOS.
+
+======================================================================
+
+Tabela Produtos:
+
+CREATE TABLE Produtos (
+    idProduto int UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    codigoProduto int NOT NULL,
+    nomeProduto varchar(255) NOT NULL,
+    categoria varchar(100) NOT NULL,
+    fornecedor varchar(100) NOT NULL,
+    quantidade int NOT NULL,
+    valorVenda decimal(10,2),
+    createdAt datatime,
+    updatedAt datetime
+);
+
+=======================================================================
+
+Tabela Categoria:
+
+CREATE TABLE Categoria (
+    idCategoria int UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    nomeCategoria varchar(100) NOT NULL,
+    createdAt datetime,
+    updatedAt datetime
+);
+
+======================================================================
+
+Tabela Fornecedor:
+
+CREATE TABLE Fornecedor (
+	idFornecedor int UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    razaoNomeEmpresarial varchar(200) NOT NULL,
+    nomeFantasia varchar(200) NOT NULL,
+    tipoFornecedor varchar(50) NOT NULL,
+    marca varchar(150) NOT NULL,
+    representante varchar(150) NOT NULL,
+    contato varchar(25) NOT NULL,
+    createdAt datetime,
+    updatedAt datetime
+);
+
+======================================================================
+
+Tabela Usuario:
+
+CREATE TABLE Usuario (
+    idUsuario int UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    nomeCompleto varchar(255) NOT NULL,
+    usuario varchar(20) NOT NULL,
+    senha varchar(12) NOT NULL,
+    email varchar(100) NOT NULL,
+    telefone varchar(25) NOT NULL,
+    createdAt datetime,
+    updatedAt datetime
+);

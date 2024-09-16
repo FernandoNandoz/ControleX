@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Categoria</title>
+
+    <link rel="stylesheet" href="../../../assets/dist/css/bootstrap.min.css">
+
+    <link href="../../../assets/dist/icons/index.html">
+</head>
+<body>
+
+    <div class="container mt-5" style="width: 700px;">
+
+        <h3 class="mb-2 fw-bold">Cadastrar Categoria</h3>
+
+        <hr class="mb-4" />
+
+        <form method="post" id="cadastrarCategoria" action="" onsubmit="gravar('categoria'); return false">
+            <div class="mb-4">
+                <label for="categoria" class="form-label">Nome da Categoria</label>
+                <input 
+                    type="text" 
+                    class="form-control" 
+                    id="categoria" 
+                    name="categoriaData"
+                    placeholder="Nome da categoria"
+                >
+            </div>
+            
+            <div class="d-grid gap-3 d-md-flex justify-content-md-end">
+                <button
+                    class="btn btn-secondary me-auto"
+                    type="reset"
+                >
+                    Limpar formulario
+                </button>
+
+                <button 
+                    class="btn btn-secondary" 
+                    style="width: 120px;" 
+                    type="button" id="buttons" 
+                    onclick="carregar('pages/produtos/categoria/categorias.php')"
+                >
+                    Voltar
+                </button>
+
+                <button 
+                    class="btn btn-primary" 
+                    style="width: 120px;" 
+                    type="submit" 
+                    id="buttons"
+                >
+                    Cadatrar
+                </button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="../../../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../js/jquery.min.js"></script>
+    <script src="../../../js/index.js"></script>
+</body>
+</html>

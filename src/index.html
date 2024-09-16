@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css" />
+  </head>
+  <body>
+
+    <div
+      class="container-fluid min-vh-100 d-flex align-items-center justify-content-center bg-secondary"
+    >
+
+      <div
+        class="container d-flex align-items-center justify-content-center gap-5 border shadow-lg bg-body-tertiary rounded"
+      >
+
+        <div class="me-5">
+          <img
+            width="500"
+            height="500"
+            src="assets/dist/icons/login.svg"
+            alt="Imagem que faz referencia a um notebook com senha."
+          />
+        </div>
+
+        <div>
+
+          <h2 class="fw-bold text-center">ControleX</h2>
+
+          <form class="px-4 py-3" style="width: 500px" action="menu.html">
+
+            <div class="mb-3">
+              <label for="usuario" class="form-label">Usuário</label>
+              <input
+                type="email"
+                class="form-control"
+                id="usuario"
+                placeholder="Usuário"
+              />
+            </div>
+             <!-- autocomplete="off"
+            required -->
+
+            <div class="mb-5">
+              <label for="senha" class="form-label">Senha</label>
+              <input
+                type="password"
+                class="form-control"
+                id="senha"
+                placeholder="Senha"
+              />
+            </div>
+            <!-- autocomplete="off"
+            required -->
+
+            <div class="d-flex gap-3 justify-content-center">
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="width: 200px; height: 40px"
+              >
+                Entrar
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-success"
+                style="width: 200px; height: 40px"
+              >
+                Registrar-se
+              </button>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

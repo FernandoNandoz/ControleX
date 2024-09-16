@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastrar Fornecedor</title>
+
+    <link rel="stylesheet" href="../../assets/dist/css/bootstrap.min.css" />
+
+    <link href="../../assets/dist/icons/index.html" />
+  </head>
+
+  <body>
+    <div class="container my-5" style="width: 700px;">
+
+      <h3 class="mb-2 fw-bold">Cadastrar Fornecedor</h3>
+
+      <hr class="mb-4" />
+
+      <form method="post" id="cadastrarFornecedor" action="" onsubmit="gravar('fornecedor'); return false">
+        <div class="mb-3">
+            <label for="razaoSocial" class="form-label">Razão Social</label>
+          <input
+            type="text"
+            class="form-control"
+            id="razaoSocial"
+            name="razaoSocialData"
+            placeholder="Razão Social ou Nome Empresarial"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="nomeFantasia" class="form-label">Nome Fantasia</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nomeFantasia"
+            name="nomeFantasiaData"
+            placeholder="Nome Fantasia"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="tipoFornecedor" class="form-label">Tipo de Fornecedor</label>
+          <select class="form-select" id="selectTipoFornecedor" name="tipoFornecedorData">
+            <option selected>Selecione uma opção </option>
+            <option value="1">Física</option>
+            <option value="2">Jurídica</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="marca" class="form-label">Marca</label>
+          <input
+            type="text"
+            class="form-control"
+            id="marca"
+            name="marcaData"
+            placeholder="Marca"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="representante" class="form-label">Representante</label>
+          <input
+            type="text"
+            class="form-control"
+            id="representante"
+            name="representanteData"
+            placeholder="Representante"
+          />
+        </div>
+
+        <div class="mb-5">
+            <label for="contato" class="form-label">Contato</label>
+            <input
+              type="text"
+              class="form-control"
+              id="contato"
+              name="contatoData"
+              placeholder="Contato"
+            />
+          </div>
+
+        <div class="d-grid gap-3 d-md-flex justify-content-md-end">
+          <button
+            class="btn btn-secondary me-auto"
+            type="reset"
+          >
+            Limpar formulario
+          </button>
+          <button
+            class="btn btn-secondary"
+            style="width: 120px"
+            type="button"
+            id="buttons"
+            onclick="carregar('pages/fornecedores/fornecedores.php')"
+          >
+            Voltar
+          </button>
+
+          <button
+            class="btn btn-primary"
+            style="width: 120px"
+            type="submit"
+            id="buttons"
+            >
+            Cadatrar
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="../../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/index.js"></script>
+  </body>
+</html>
